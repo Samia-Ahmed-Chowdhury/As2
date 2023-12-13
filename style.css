@@ -1,0 +1,362 @@
+:root {
+    --main-primary-color: #B68C5A;
+    --Dark_02: #414040;
+    --Dark_03: #707070;
+    --Dark_04: #A0A0A0;
+    --Dark_05: #CFCFCF;
+    --Dark_06: #E7E7E7;
+    --Dark_07: #F3F3F3;
+    --main-heading-font: 'EB Garamond', serif;
+    --main-regular-font: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--main-regular-font);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none !important;
+}
+
+
+
+
+/* ---------nav--------- */
+nav ul li {
+    color: var(--Dark_03);
+}
+
+.nav_btn {
+    background-color: var(--main-primary-color);
+}
+
+/* -----------hero section---------- */
+.hero_section {
+    background-image: url("images/Rectangle\ 5.png"), url("images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10.4rem 24.8rem;
+}
+
+.hero_section h1 {
+    font-family: var(--main-heading-font);
+    font-size: 7.2rem;
+    line-height: 8.5rem;
+}
+
+.hero_section p {
+    /* line-height: 2.6rem; */
+    color: var(--Dark_06);
+}
+
+.hero_section form input[type="text"] {
+    width: 50rem;
+    height: 6.4rem;
+}
+
+.hero_section form input[type="submit"] {
+    background: var(--main-primary-color);
+}
+
+.hero_section form input::placeholder {
+    color: var(--Dark_04);
+}
+
+
+/* <!-- ------ Legal card Area----- --> */
+
+h2 {
+    font-family: var(--main-heading-font);
+    font-size: 4rem;
+    line-height: 5.2rem;
+    color: var(--Dark_02);
+}
+
+p {
+    /* line-height: 2.6rem; */
+    color: var(--Dark_03);
+}
+
+.box_area {
+    border-color: #E7E7E7;
+}
+
+.legal_area .card {
+    padding: 5.6rem 7.2rem 7rem;
+    text-align: center;
+    border: none;
+}
+
+.card.darker_card {
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
+}
+
+.card .card-title {
+    margin: 3.1rem 0 2.4rem;
+    font-family: var(--main-heading-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    color: var(--Dark_02);
+}
+
+.card .card-text {
+    font-weight: 400;
+    color: var(--Dark_03);
+}
+
+
+/* -----------testimonial-------- */
+
+.carousel-item>img {
+    height: 500px;
+}
+
+.carousel-caption {
+    padding: 9.6rem 13.5rem;
+}
+
+.carousel-caption .bg_img {
+    width: 70px;
+    height: 70px;
+}
+
+/* ----------solution--- */
+
+
+.points h5 {
+    color: var(--Dark_02);
+    font-family: var(--main-heading-font);
+}
+
+.points p {
+    color: var(--Dark_03);
+}
+
+.points2 h5 {
+    color: var(--Dark_02);
+    font-family: var(--main-heading-font);
+}
+
+.points2 p {
+    color: var(--Dark_03);
+}
+
+/* -----------faq------- */
+
+.accordion-item {
+    background: var(--Dark_07);
+}
+
+.accordion-button {
+    font-family: var(--main-heading-font);
+    background: none;
+    color: var(--Dark_02);
+}
+
+.accordion-body {
+    color: var(--Dark_03);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--Dark_02);
+    background: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    margin-left: auto;
+    content: "+";
+    width: 24px;
+    height: 24px;
+    background: none;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: none;
+    content: "-";
+    width: 24px;
+    height: 24px;
+}
+
+/* -------contact us----- */
+.contact_us form .form-control {
+    background: var(--Dark_07);
+    padding: 23px 0;
+}
+
+textarea {
+    height: 162px;
+    color: var(--Dark_03) !important;
+    padding-left: 23px !important;
+}
+
+.contact_us form input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--Dark_03);
+    padding-left: 23px;
+}
+
+.contact_us form input[type="submit"] {
+    background-color: var(--main-primary-color);
+}
+
+.contact_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+    padding: 5.5rem 2rem;
+    text-align: center;
+    background: var(--Dark_07);
+    border-color: var(--Dark_06) !important;
+}
+
+.card-title {
+    font-family: var(--main-heading-font);
+    font-size: 3.2rem;
+    line-height: 42px;
+    color: var(--Dark_02);
+}
+
+.card-text {
+    color: var(--Dark_03);
+}
+
+/* ------footer---------- */
+footer {
+    background: #111111;
+}
+
+footer h6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+footer p {
+    color: var(--Dark_05) !important;
+}
+
+footer form input {
+    width: 100%;
+    max-width: 257px;
+    height: 47px;
+    color: var(--Dark_03);
+    padding-left: 25px;
+}
+
+footer form .submit_btn {
+    width: 60px;
+    height: 47px;
+    border-radius: 0 4px 4px 0;
+    display: inline-block;
+    position: absolute;
+    background: var(--main-primary-color);
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+/* --------------media query------------ */
+
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 60% !important;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 58% !important;
+    }
+}
+
+
+
+@media only screen and (max-width:991px) {
+    html {
+        font-size: 55% !important;
+    }
+
+    nav ul {
+        margin: 2rem 0;
+        padding: 0 3rem !important;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .nav_btn {
+        margin-left: 3rem;
+    }
+
+    .hero_section {
+        padding: 5rem;
+    }
+
+    .box_area {
+        border-right: none !important;
+        border-bottom: 1px solid #E7E7E7;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 43.5% !important;
+    }
+
+    .box_area:not(:last-child),
+    .box:not(:last-child) {
+        border-right: none !important;
+        border-bottom: 2px solid #E7E7E7;
+    }
+
+    .contact_boxes {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .carousel-caption {
+        padding: 9.6rem 1.5rem;
+    }
+
+    footer .row .div {
+        align-content: flex-start !important;
+        margin: 0 auto;
+    }
+    .contact_us .rg{
+        --bs-gutter-x: 0 ;
+    }
+}
